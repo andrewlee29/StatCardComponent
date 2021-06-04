@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "InLexend Decater", sans-serif;
+}
+
+.container {
+  position: relative;
+  background: black;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  min-height: 100vh;
+  background: #090b1a;
+}
+
+.container .content .text-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px;
+}
+
+.container .content .text-content h1 {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.container .content .text-content h1 span {
+  color: #aa5cdb;
+}
+
+.container .content .text-content h2 {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.container .content .text-content p {
+  font-family: "InLexend Decater", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.container .content .keypoints {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .content .keypoints h2,
+.container .content .keypoints p {
+  margin: 8px;
+}
+
+.container .content .image-content {
+  background: #aa5cdb;
+  width: 100%;
+  height: 100%;
+}
+
+.container .content .image-content img {
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
+  opacity: 0.4;
+  width: 100%;
+  height: 470px;
+}
+
+@media only screen and (max-width: 900px) {
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px;
+  }
+  .text-content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0px;
+  }
+  .text-content h1,
+  .text-content h2,
+  .text-content p {
+    text-align: center;
+  }
+  .text-content .keypoints {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .text-content .keypoints h2,
+  .text-content .keypoints p {
+    text-align: center;
+  }
+  .container .content .image-content {
+    height: 30%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
